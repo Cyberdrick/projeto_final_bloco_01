@@ -1,5 +1,6 @@
 package e_commerce;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import e_commerce.model.PlacasGames;
@@ -46,10 +47,16 @@ public class Menu {
 			System.out.println("*****************************************************");
 			System.out.println("Entre com a opção desejada:                          ");
 			System.out.println("                                                     ");
+			
+			try {
+				option = read.nextInt();
+			}catch(InputMismatchException e){
+				System.out.println("\nDigite valores inteiros!");
+				read.nextLine();
+				option=0;
+			}
 
-			option = read.nextInt();
-
-			if (option == 0) {
+			if (option == 9) {
 				System.out.println("\nGPU Informática	- e-commerce de GPUS - Compra e Venda de Placas de Video!");
 				sobre();
                  read.close();
