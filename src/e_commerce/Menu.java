@@ -2,9 +2,26 @@ package e_commerce;
 
 import java.util.Scanner;
 
+import e_commerce.model.PlacasGames;
+import e_commerce.model.PlacasModelagem;
+
 public class Menu {
 
 	public static void main(String[] args) {
+		
+		
+		// Teste da Classe PlacasGames
+			PlacasGames cc1 = new PlacasGames(1, "RX", 1, "AMD", 10000.0f, true);
+			cc1.visualizar();
+			cc1.setGames(false);
+			cc1.visualizar();
+				
+		// Teste da Classe PlacasModelagem
+			PlacasModelagem cp1 = new PlacasModelagem(1, "RX", 2, "AMD", 10000.0f, true);
+			cp1.visualizar();
+			cp1.setModelagem(false);
+		    cp1.visualizar();
+		
 
 		Scanner read = new Scanner(System.in);
 
