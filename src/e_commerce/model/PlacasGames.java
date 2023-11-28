@@ -2,23 +2,23 @@ package e_commerce.model;
 
 public class PlacasGames extends Ecommerce{
 
-	private boolean Games;
+	private boolean games;
 
-	public PlacasGames(int codigo, String modelo, int tipo, String marca, float valor, boolean Games ) {
+	public PlacasGames(int codigo, String modelo, int tipo, String marca, float valor, boolean games ) {
 		super(codigo, modelo, tipo, marca, valor);
-		this.Games = Games;
+		this.games = games;
 	}
 	
 	
 	
 	public boolean isGames() {
-		return Games;
+		return games;
 	}
 
 
 
-	public void setGames(boolean Games) {
-		Games = Games;
+	public void setGames(boolean games) {
+		this.games = games;
 	}
 
 
@@ -26,7 +26,7 @@ public class PlacasGames extends Ecommerce{
 	@Override
 	public void visualizar() {
 		super.visualizar();
-		System.out.println("Possui RGB? " + this.Games);
+		System.out.println("Possui RGB? " + this.games);
 	}
 
 }
